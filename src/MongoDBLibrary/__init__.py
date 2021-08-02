@@ -3,9 +3,9 @@ from .mongoquery import MongoQuery
 from .version import VERSION
 
 
-class MongoDBLibrary(MongoConnectionManager, MongoQuery):
+class MongoDBBSONLibrary(MongoConnectionManager, MongoQuery):
     """
-    MongoDB Library contains utilities meant for Robot Framework's usage.
+    BSON MongoDB Library contains utilities meant for Robot Framework's usage.
     
     This can allow you to query your Mongo database after an action has been made to verify the results.
 
