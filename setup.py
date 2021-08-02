@@ -7,7 +7,7 @@ import setuptools
 
 import sys, os
 
-sys.path.insert(0, os.path.join('src', 'MongoDBLibrary'))
+sys.path.insert(0, os.path.join('src', 'MongoDBBSONLibrary'))
 
 from version import VERSION
 
@@ -36,12 +36,12 @@ def main():
     setuptools.setup(name='robotframework-mongodb-library',
                      version=VERSION,
                      description='Mongo Database utility library for Robot Framework',
-                     author='Akkharaphon Tangpaopong',
-                     author_email='akkharaphon.tpp@gmail.com',
-                     url='https://github.com/robotframework-thailand/robotframework-mongodb-library',
-                     keywords=['mongodb', 'robotframework', 'robotframework-mongodb-library', 'MongoDBLibrary'],
+                     author='momen heragi',
+                     author_email='momenh@gmail.com',
+                     url='https://github.com/momenh/robotframework-mongodb-bson-library',
+                     keywords=['mongodb', 'robotframework', 'robotframework-mongodb-bson-library', 'MongoDBBSONLibrary'],
                      package_dir={'': 'src'},
-                     packages=['MongoDBLibrary'],
+                     packages=['MongoDBBSONLibrary'],
                      include_package_data=True,
                      install_requires=requirements,
                      zip_safe=False,
