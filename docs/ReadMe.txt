@@ -1,6 +1,6 @@
 This will work only if the library is already installed on the current machine.
 Docs created with the following commandline:
 
-python -m robot.libdoc -f HTML MongoDBBSONLibrary MongoDBBSONLibrary.html
+python3 -m robot.libdoc -f HTML MongoDBBSONLibrary MongoDBBSONLibrary.html
 
 
