@@ -9,8 +9,6 @@ import sys, os
 
 sys.path.insert(0, os.path.join('src', 'MongoDBBSONLibrary'))
 
-from version import VERSION
-
 requirements = [
     'tox>=3.0.0',
     'coverage',
@@ -32,10 +30,15 @@ Topic :: Software Development :: Testing
 """[1:-1]
 
 
+with open("README.md", "r", encoding="utf-8") as fh:
+    long_description = fh.read()
+    
 def main():
-    setuptools.setup(name='robotframework-mongodb-library',
-                     version=VERSION,
-                     description='Mongo Database utility library for Robot Framework',
+    setuptools.setup(name='robotframework-mongodb-bson-library',
+                     version=1.1,
+                     description='Mongo Database utility library for Robot Framework that uses bson serialization utils',
+                     long_description=long_description,
+                     long_description_content_type="text/markdown",
                      author='momen heragi',
                      author_email='momenh@gmail.com',
                      url='https://github.com/momenh/robotframework-mongodb-bson-library',

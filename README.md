@@ -27,21 +27,31 @@ You can install by pulling down source and executing the following:
 sudo python setup.py install
 '''
 
+
+
+You can install using pip
+
+'''
+pip install robotframework-mongodb-bson-library
+'''
+
 # Documentation
 For the detail keyword documentation. Go to this following link:
 
-https://robotframework-thailand.github.io/robotframework-mongodb-library/
+https://momenh.github.io/robotframework-mongodb-bson-library/
 
-$ pip install -U setuptools wheel
+- install build tools:
+
+    $ python3 -m pip install --upgrade build
+
+- build dist:
+
+    $ python setup.py sdist bdist_wheel
  
-$ python setup.py sdist bdist_wheel
- 
-$ pip install twine 
+- install twine for upload to:
 
-$ python3 setup.py sdist bdist_wheel
+    $ python3 -m pip install --upgrade twine
 
-chmod 600 ~/.pypirc
+- upload dist package:
 
-twine upload --repository testpypi dist/*
-
-twine upload --repository pypi dist/*
+    $ python3 -m twine upload --repository pypi dist/*
