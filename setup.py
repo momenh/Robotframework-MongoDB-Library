@@ -32,10 +32,13 @@ Topic :: Software Development :: Testing
 
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
-    
+
+
+from version import VERSION
+
 def main():
     setuptools.setup(name='robotframework-mongodb-bson-library',
-                     version=1.1,
+                     version=VERSION,
                      description='Mongo Database utility library for Robot Framework that uses bson serialization utils',
                      long_description=long_description,
                      long_description_content_type="text/markdown",

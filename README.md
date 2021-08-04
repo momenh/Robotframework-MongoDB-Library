@@ -46,7 +46,7 @@ https://momenh.github.io/robotframework-mongodb-bson-library/
 
 - build dist:
 
-    $ python setup.py sdist bdist_wheel
+    $ python3 -m build
  
 - install twine for upload to:
 
