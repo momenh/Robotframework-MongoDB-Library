@@ -35,6 +35,13 @@ You can install using pip
 pip install robotframework-mongodb-bson-library
 '''
 
+if you face any issues also run:
+
+        pip uninstall bson
+        pip uninstall pymongo
+        pip install bson==0.5.8
+        pip install pymongo==3.8.0
+
 # Documentation
 For the detail keyword documentation. Go to this following link:
 
