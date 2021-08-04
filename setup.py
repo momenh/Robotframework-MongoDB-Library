@@ -33,6 +33,8 @@ Topic :: Software Development :: Testing
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
+with open("LICENSE", "r", encoding="utf-8") as fh:
+    license = fh.read()
 
 from version import VERSION
 
@@ -53,7 +55,8 @@ def main():
                      zip_safe=False,
                      classifiers=CLASSIFIERS.splitlines(),
                      test_suite='tests',
-                     tests_require=test_requirements
+                     tests_require=test_requirements,
+                     license=license
                      )
 
 
